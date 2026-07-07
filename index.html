@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F8 Movimento Urbano — Organização de corridas de rua, cronometragem esportiva por chip, captação de patrocínios e projetos públicos. Movimente sua vida, desafie a cidade.">
+    <meta name="keywords" content="corrida de rua, cronometragem esportiva, eventos esportivos, movimento urbano, São Paulo, FPA, atletismo, organização de corridas">
+    <title>F8 Movimento Urbano | Movimente sua vida. Desafie a cidade.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles-v3.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- HEADER / NAVEGAÇÃO -->
+    <!-- ============================================= -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <a href="#inicio" class="logo">
+                <span class="logo-f8">F8</span>
+                <span class="logo-text">MOVIMENTO<br>URBANO</span>
+            </a>
+
+            <!-- Nav Desktop -->
+            <nav class="nav" id="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#eventos">Calendário de Eventos</a>
+                <a href="#servicos">Nossos Serviços</a>
+                <a href="#organizadores">Organizadores</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="header-actions">
+                <!-- Switch B2B/B2C -->
+                <div class="switch-toggle" id="mode-switch">
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Sou%20atleta%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="active">Sou Atleta</a>
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Sou%20organizador%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="active">Sou Organizador</a>
+                </div>
+
+
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#inicio">Início</a>
+            <a href="#eventos">Calendário de Eventos</a>
+            <a href="#servicos">Nossos Serviços</a>
+            <a href="#organizadores">Organizadores</a>
+            <a href="#contato">Contato</a>
+            <a href="#" class="btn-primary" style="text-align:center; margin-top: 1rem;">Área do Atleta</a>
+        </nav>
+    </header>
+
+
+    <!-- ============================================= -->
+    <!-- HERO SECTION -->
+    <!-- ============================================= -->
+    <section class="hero" id="inicio">
+        <!-- Background Image -->
+        <div class="hero-bg">
+            <img src="assets/images/hero-bg.png" alt="Corrida noturna urbana" loading="eager">
+        </div>
+
+        <!-- Hero Content — Atleta -->
+        <div class="hero-content" id="hero-content-atleta" data-view="atleta">
+            <h1 class="heading-xl">
+                Movimente sua vida.<br>
+                <span>Desafie a cidade.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Encontre seu próximo desafio ou organize um evento inesquecível com a F8 Movimento Urbano.
+            </p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Nome do evento, cidade ou modalidade..." aria-label="Buscar eventos" autocomplete="off">
+                <button class="btn-search" id="btn-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    Buscar
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Content — Organizador -->
+        <div class="hero-content" id="hero-content-organizador" data-view="organizador" style="display:none;">
+            <h1 class="heading-xl">
+                Organize eventos<br>
+                <span>inesquecíveis.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Cronometragem por chip, logística completa, captação de patrocínios e expertise técnica credenciada pela FPA.
+            </p>
+            <div class="search-bar">
+                <input type="text" placeholder="Descreva seu projeto ou evento..." aria-label="Buscar serviços" autocomplete="off">
+                <button class="btn-search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- CONTADORES / STATS -->
+    <!-- ============================================= -->
+    <section class="section stats-section" data-view="both">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <div class="stat-number" data-target="50" data-prefix="+">0</div>
+                    <div class="stat-label">Eventos Organizados</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-1">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="stat-number" data-target="10000" data-prefix="+">0</div>
+                    <div class="stat-label">Atletas Movimentados</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <div class="stat-icon">
+                        <!-- Cronômetro icon -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3L2 6"/><path d="M22 6l-3-3"/><path d="M12 2v2"/></svg>
+                    </div>
+                    <div class="stat-number" data-target="1500" data-prefix="+" data-suffix="h">0</div>
+                    <div class="stat-label">de Cronometragem</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- NOSSOS SERVIÇOS -->
+    <!-- ============================================= -->
+    <section class="section section-dark section-texture" id="servicos" data-view="both">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg reveal">Nossos <span class="text-accent">Serviços</span></h2>
+                <p class="reveal reveal-delay-1">Soluções completas para o ecossistema esportivo, do atleta à prefeitura.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Organização de Corridas</h3>
+                        <p>Da largada à premiação: logística, percurso, hidratação, sinalização e tudo que seu evento precisa para rodar sem erro.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card special-card reveal reveal-delay-2">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>Cronometragem Esportiva</h3>
+                        <p>Resultado em tempo real no celular do atleta. Precisão milimétrica com equipamento profissional e equipe dedicada.</p>
+                        <span class="badge-chip">
+                            📡 Cronometragem por Chip
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Captação de Patrocínios</h3>
+                        <p>Conectamos sua marca ao público certo. Planos de ativação, exposição no evento e métricas de retorno para o patrocinador.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-number">04</div>
+                    <div class="service-content">
+                        <h3>Projetos Públicos & Editais</h3>
+                        <p>Elaboração técnica para prefeituras e secretarias de esporte. Experiência com editais, leis de incentivo e prestação de contas.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-number">05</div>
+                    <div class="service-content">
+                        <h3>Academias ao Ar Livre</h3>
+                        <p>Projeto, fornecimento e instalação de academias ao ar livre em praças e parques. Transforme espaços públicos em saúde.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-number">06</div>
+                    <div class="service-content">
+                        <h3>Gestão de Staff</h3>
+                        <p>Equipe treinada, uniformizada e com rádio comunicação. Do briefing ao pós-evento, sem dor de cabeça pra você.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- PRÓXIMOS DESAFIOS (EVENTOS) -->
+    <!-- ============================================= -->
+    <section class="section" id="eventos" data-view="atleta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg reveal">Próximos <span class="text-accent">Desafios</span></h2>
+                <p class="reveal reveal-delay-1">Encontre sua próxima corrida e supere seus limites.</p>
+            </div>
+
+            <div class="events-carousel-wrapper reveal">
+                <button class="carousel-btn prev" id="events-prev" aria-label="Anterior">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+
+                <div class="events-carousel" id="events-carousel">
+                    <!-- Card 1 -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-1.png" alt="Meia Maratona SP" loading="lazy">
+                            <span class="event-card-date">25 AGO</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>Meia Maratona São Paulo</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Paulo, SP
+                            </div>
+                            <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20eventos%20da%20F8." target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Inscreva-se</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-2.png" alt="10K Night Run" loading="lazy">
+                            <span class="event-card-date">15 SET</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>10K Night Run SP</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Paulo, SP
+                            </div>
+                            <a href="#" class="btn-primary btn-sm">Inscreva-se</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-3.png" alt="Corrida Neon Run" loading="lazy">
+                            <span class="event-card-date">05 OUT</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>Neon Run São Miguel</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Miguel Paulista, SP
+                            </div>
+                            <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20eventos%20da%20F8." target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Saber Mais</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-4.png" alt="Trail Urbano" loading="lazy">
+                            <span class="event-card-date">20 OUT</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>Trail Urbano Zona Leste</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Paulo, SP
+                            </div>
+                            <a href="#" class="btn-primary btn-sm">Inscreva-se</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 (extra for carousel scroll) -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-1.png" alt="Maratona Leste" loading="lazy">
+                            <span class="event-card-date">10 NOV</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>Maratona Zona Leste</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Paulo, SP
+                            </div>
+                            <a href="#" class="btn-primary btn-sm">Inscreva-se</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="event-card">
+                        <div class="event-card-image">
+                            <img src="assets/images/event-3.png" alt="Corrida da Virada" loading="lazy">
+                            <span class="event-card-date">31 DEZ</span>
+                        </div>
+                        <div class="event-card-body">
+                            <h3>Corrida da Virada 2026</h3>
+                            <div class="event-card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                São Paulo, SP
+                            </div>
+                            <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20eventos%20da%20F8." target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="events-next" aria-label="Próximo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- SPLIT SECTION: ATLETAS / ORGANIZADORES -->
+    <!-- ============================================= -->
+    <section class="split-section" id="organizadores" data-view="both">
+        <!-- Bloco Atletas -->
+        <div class="split-block split-block-atleta">
+            <div class="split-bg">
+                <img src="assets/images/split-atleta.png" alt="Atleta correndo" loading="lazy">
+            </div>
+            <div class="split-content reveal">
+                <span class="split-tag">Para Atletas</span>
+                <h2 class="heading-md">Supere seus limites.<br>Transforme sua vida.</h2>
+                <p>Descubra eventos desafiadores perto de você, acompanhe seus resultados com cronometragem de precisão e faça parte de uma comunidade que respira movimento.</p>
+                <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20calend%C3%A1rio%20de%20eventos%20da%20F8." target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Ver Calendário
+                </a>
+            </div>
+        </div>
+
+        <!-- Bloco Organizadores -->
+        <div class="split-block split-block-organizador">
+            <div class="split-bg">
+                <img src="assets/images/split-organizador.png" alt="Equipe organizadora" loading="lazy">
+            </div>
+            <div class="split-content reveal">
+                <span class="split-tag split-tag-blue">Para Organizadores | Prefeituras</span>
+                <h2 class="heading-md">Expertise técnica.<br>Resultado garantido.</h2>
+                <p>Cronometragem por chip, logística completa, permit FPA, captação de patrocínios e gestão operacional. Tudo que você precisa para um evento de sucesso.</p>
+                <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20organizar%20um%20evento%20com%20a%20F8." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Solicite um Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- DEPOIMENTOS / SOCIAL PROOF -->
+    <!-- ============================================= -->
+    <section class="section section-dark" id="depoimentos" data-view="both">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="heading-lg reveal">Quem <span class="text-accent">confia</span> na F8</h2>
+                <p class="reveal reveal-delay-1">Histórias reais de quem já viveu a experiência F8.</p>
+            </div>
+
+            <div class="testimonials-grid reveal">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        Organização impecável do início ao fim. A cronometragem por chip funcionou perfeitamente, recebi meu resultado em tempo real no celular. Já estou inscrito para o próximo evento!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <strong class="testimonial-name">Ricardo Mendes</strong>
+                            <span class="testimonial-role">Atleta Amador</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        Excelente visibilidade para nossa marca. A F8 entregou um plano de ativação completo com retorno mensurável. Nosso stand teve mais de 2.000 interações no evento.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <strong class="testimonial-name">Ana Carolina Lima</strong>
+                            <span class="testimonial-role">Diretora de Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        Parceria fundamental para o esporte local. A F8 entregou um projeto completo para nossa secretaria, com cronometragem profissional e instalação de academia ao ar livre. Qualidade que transforma.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-info">
+                            <strong class="testimonial-name">José Santos</strong>
+                            <span class="testimonial-role">Secretário de Esportes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parceiros -->
+            <div class="partners-bar reveal">
+                <div class="partner-logo-placeholder">PARCEIRO 1</div>
+                <div class="partner-logo-placeholder">PARCEIRO 2</div>
+                <div class="partner-logo-placeholder">PARCEIRO 3</div>
+                <div class="partner-logo-placeholder">PARCEIRO 4</div>
+                <div class="partner-logo-placeholder">PARCEIRO 5</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- CONTATO / CTA FINAL -->
+    <!-- ============================================= -->
+    <section class="section section-texture" id="contato" data-view="both">
+        <div class="container">
+            <div class="cta-final reveal">
+                <h2 class="heading-lg">Pronto para <span class="text-accent">movimentar</span>?</h2>
+                <p class="text-body" style="max-width: 560px; margin: 1rem auto 2rem;">
+                    Seja atleta buscando seu próximo desafio ou organizador planejando um grande evento, a F8 está pronta para você.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#eventos" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Ver Eventos
+                    </a>
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================= -->
+    <!-- FOOTER -->
+    <!-- ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-f8">F8</span>
+                        <span class="logo-text">MOVIMENTO<br>URBANO</span>
+                    </a>
+                    <p>
+                        Transformando o cenário esportivo urbano com tecnologia, paixão e excelência operacional desde São Miguel Paulista para o Brasil.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#eventos">Calendário de Eventos</a>
+                    <a href="#servicos">Nossos Serviços</a>
+                    <a href="#organizadores">Para Organizadores</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                </div>
+
+                <!-- Serviços -->
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <a href="#">Organização de Corridas</a>
+                    <a href="#">Cronometragem por Chip</a>
+                    <a href="#">Captação de Patrocínios</a>
+                    <a href="#">Projetos Públicos</a>
+                    <a href="#">Academias ao Ar Livre</a>
+                </div>
+
+                <!-- Central de Ajuda -->
+                <div class="footer-column">
+                    <h4>Central de Ajuda</h4>
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-de-uso.html">Termos de Uso</a>
+                    <a href="mailto:contato@f8movimentourbano.com.br">contato@f8movimentourbano.com.br</a>
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20F8." target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 8px;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        (11) 98368-5985
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div>
+                    <p>© 2026 F8 Movimento Urbano — Todos os direitos reservados.</p>
+                    <p>Sediada em São Miguel Paulista | São Paulo | SP, Brasil | CNPJ: XX.XXX.XXX/0001-XX</p>
+                </div>
+                <div class="social-links">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/f8movimentourbano?igsh=aTEwODJwbWplOHA5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- ============================================= -->
+    <!-- COOKIE CONSENT BANNER -->
+    <!-- ============================================= -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com a nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+            <button id="btn-accept-cookies" class="btn-primary btn-sm">Entendi e Aceito</button>
+        </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- FLOATING BUTTONS -->
+    <!-- ============================================= -->
+    <div class="floating-buttons">
+        <a href="https://www.instagram.com/f8movimentourbano?igsh=aTEwODJwbWplOHA5" target="_blank" rel="noopener noreferrer" class="float-btn float-ig">
+            <img src="instagram%20icone.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" class="float-btn float-wpp">
+            <img src="icone%20whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="js/main-v3.js"></script>
+</body>
+</html>
