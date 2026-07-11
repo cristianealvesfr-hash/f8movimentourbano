@@ -1591,6 +1591,11 @@ ol {
   }
 
   /* Hero */
+  .hero {
+    min-height: auto;
+    padding: 120px 0 40px;
+  }
+
   .hero-content {
     padding: 1.5rem 1rem;
   }
