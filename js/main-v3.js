@@ -387,28 +387,17 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {Event} [e] — evento de submit ou click
      */
     const handleSearch = (e) => {
-        e?.preventDefault();
-
-        if (!searchInput) return;
-
-        const value = searchInput.value.trim();
-
-        if (!value) {
-            // Campo vazio — aplica efeito de shake
-            searchInput.classList.add('shake');
-            searchInput.focus();
-            // Remove a classe após a animação terminar (~600 ms)
-            setTimeout(() => searchInput.classList.remove('shake'), 600);
-            return;
-        }
-
-        // Busca válida
-        console.log(`🔍 Buscando: ${value}`);
-        alert(`Buscando: ${value}`);
+        if (e) e.preventDefault();
+        window.location.href = 'evento-sao-miguel.html';
     };
 
     searchForm?.addEventListener('submit', handleSearch);
     searchBtn?.addEventListener('click', handleSearch);
+    searchInput?.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            handleSearch(e);
+        }
+    });
 
 
     // ========================================================
