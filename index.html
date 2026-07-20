@@ -419,27 +419,55 @@
         </div>
     </section>
 
+    <!-- ============================================= -->
+    <!-- PATROCINADOR MASTER DESTAQUE -->
+    <!-- ============================================= -->
+    <section class="section master-sponsor-showcase" style="padding: 5rem 0; background: #0a0a0a; border-top: 1px solid rgba(255,107,0,0.1); border-bottom: 1px solid rgba(255,107,0,0.1); position: relative; overflow: hidden;">
+        <!-- Background Glow -->
+        <div style="position: absolute; top: 50%; left: 30%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(255,0,0,0.08) 0%, transparent 60%); transform: translate(-50%, -50%); pointer-events: none;"></div>
+        
+        <div class="container">
+            <div class="sponsor-showcase-grid reveal" style="display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;">
+                
+                <div class="sponsor-showcase-image" style="border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(255,0,0,0.15); border: 1px solid rgba(255,255,255,0.05); max-width: 500px; margin: 0 auto; position: relative;">
+                    <!-- Edge light effect -->
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-shadow: inset 0 0 20px rgba(255,107,0,0.2); pointer-events: none;"></div>
+                    <img src="assets/images/patrocinador-gavioes.jpeg" alt="Academia Gaviões - Patrocinador Master" style="width: 100%; height: auto; display: block; filter: contrast(1.1) brightness(1.1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+
+                <div class="sponsor-showcase-content" style="text-align: left;">
+                    <div style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,107,0,0.1); padding: 8px 16px; border-radius: 50px; margin-bottom: 1.5rem; border: 1px solid rgba(255,107,0,0.3);">
+                        <span style="color: var(--accent-orange); font-size: 1.2rem;">🏆</span>
+                        <span style="color: var(--accent-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Patrocinador Master Oficial 2026</span>
+                    </div>
+                    
+                    <h2 class="heading-lg" style="margin-bottom: 1.5rem; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1;">
+                        Academia <span style="color: #ff0000; text-shadow: 0 0 30px rgba(255,0,0,0.4);">Gaviões</span>
+                    </h2>
+                    
+                    <p class="text-body" style="font-size: 1.2rem; color: #ccc; margin-bottom: 2.5rem; line-height: 1.6; max-width: 90%;">
+                        A força que move nossos atletas. Uma parceria de peso que traz estrutura premium 24 horas, alta performance e exclusividade absoluta para todos os participantes do circuito F8 Movimento Urbano.
+                    </p>
+
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20patroc%C3%ADnio%20da%20Academia%20Gavi%C3%B5es." target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 18px 36px; font-size: 1.1rem; background: linear-gradient(90deg, #ff0000, var(--accent-orange)); border: none; box-shadow: 0 10px 30px rgba(255,0,0,0.3);">
+                        🔥 Conheça a Gaviões
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- ============================================= -->
-    <!-- VOLUNTÁRIOS E PATROCINADORES -->
+    <!-- SEJA UM PATROCINADOR -->
     <!-- ============================================= -->
     <section class="section engage-section" id="engage" data-view="both">
         <div class="container">
             <div class="engage-header reveal">
-                <h2 class="heading-lg">Faça Parte do Movimento:<br><span class="text-accent">A Cidade é Nosso Treino, Você é Nossa Força.</span></h2>
+                <h2 class="heading-lg">Apoie o Movimento:<br><span class="text-accent">Sua Marca na Linha de Chegada.</span></h2>
             </div>
             
-            <div class="engage-grid reveal">
-                <!-- Voluntários -->
-                <div class="engage-card volunteer-card">
-                    <div class="engage-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    </div>
-                    <h3 class="heading-md" style="margin-bottom: 1rem;">Energia que Transforma</h3>
-                    <p class="text-body" style="margin-bottom: 2rem;">Doe seu tempo e talento para fazer a diferença nos bastidores. Seja a força que impulsiona os atletas até a linha de chegada e viva uma experiência inesquecível de solidariedade, impacto real e integração.</p>
-                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Quero%20ser%20um%20volunt%C3%A1rio%20na%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">🤝 Quero ser Voluntário</a>
-                </div>
-
+            <div class="engage-grid reveal" style="max-width: 600px; margin: 0 auto; display: block;">
                 <!-- Patrocinadores -->
                 <div class="engage-card sponsor-card">
                     <div class="engage-icon">
@@ -447,14 +475,7 @@
                     </div>
                     <h3 class="heading-md" style="margin-bottom: 1rem;">Propósito e Visibilidade</h3>
                     <p class="text-body" style="margin-bottom: 2rem;">Associe sua marca a um estilo de vida focado em saúde, superação e desenvolvimento social. Atinja um público altamente engajado e seja um pilar fundamental no sucesso de grandes eventos.</p>
-                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Tenho%20interesse%20em%20ser%20um%20patrocinador%20da%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">🚀 Seja um Patrocinador</a>
-                    
-                    <div class="master-sponsor">
-                        <span class="master-sponsor-label">Patrocinador Master 2026:</span>
-                        <div class="master-sponsor-img-wrapper">
-                            <img src="assets/images/patrocinador-gavioes.jpeg" alt="Academia Gaviões" loading="lazy">
-                        </div>
-                    </div>
+                    <a href="https://wa.me/5511983685985?text=Ol%C3%A1!%20Tenho%20interesse%20em%20ser%20um%20patrocinador%20da%20F8%20Movimento%20Urbano." target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">🚀 Seja um Patrocinador Oficial</a>
                 </div>
             </div>
         </div>
